@@ -1,0 +1,112 @@
+/* font-family: 'Rubik', sans-serif; */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Rubik", -apple-system, sans-serifs;
+    scroll-behavior: smooth;
+}
+.header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.header.zoom{
+    background-color: #14213d;
+}
+.header.win{
+    background-color: #e63946;
+}
+.header.monke{
+    background-color: #03071e;
+}
+
+.header-ul {
+    display: flex;
+    justify-content: space-around;
+}
+.header-ul--li {
+    list-style: none;
+    padding: 30px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+}
+
+/* Main */
+.main{
+    width: 100%;
+    height: 80vh;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main.zoom{
+    background-image: url('../images/backgroundZoom.jpg');
+}
+
+.main.win{
+    background-image: url('../images/backgroundWindows.jpg');
+}
+
+.main.monke{
+    background-image: url('../images/backgroundMonke.jpg');
+}
+
+.key-container{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.key-container .key{
+    transition: all 0.07s;
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: whitesmoke;
+    box-shadow: 0 0 10px #ffc600;
+}
+
+.footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer.zoom{
+    background-color: #14213d;
+}
+.footer.win{
+    background-color: #e63946;
+    color: black;
+}
+.footer.monke{
+    background-color: #03071e;
+}
+
+.footer p{
+    font-size: 1.5rem;
+    color: white;
+}

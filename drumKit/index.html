@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Juego de drum pad, donde aprietas una tecla y se reproduce un sonido"
+        />
+        <meta name="keywords" content="Juego, Diversión, Música" />
+        <meta name="author" content="Ulises Moralez" />
+        <meta name="robots" content="index" />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>DrumKit</title>
+    </head>
+    <body>
+        <header class="header zoom" id="header">
+            <div class="header-ul">
+                <li class="header-ul--li" id="zoom">
+                    Clases Virtuales
+                </li>
+                <li class="header-ul--li" id="win">
+                    Sonidos de Windows
+                </li>
+                <li class="header-ul--li" id="monke">MONKE</li>
+            </div>
+        </header>
+        <div class="main zoom" id="main">
+            <div class="key-container">
+                <div class="key" data-key="65"><kbd>A</kbd></div>
+                <div class="key" data-key="83"><kbd>S</kbd></div>
+                <div class="key" data-key="68"><kbd>D</kbd></div>
+                <div class="key" data-key="70"><kbd>F</kbd></div>
+                <div class="key" data-key="71"><kbd>G</kbd></div>
+            </div>
+        </div>
+        <footer class="footer zoom" id="footer">
+            <p>Made with ❤ by Ulises Moralez<br />#JS30</p>
+        </footer>
+
+        <audio data-key="65" id="A" src="./sounds/boom.wav"></audio>
+        <audio data-key="83" id="S" src="./sounds/clap.wav"></audio>
+        <audio data-key="68" id="D" src="./sounds/hihat.wav"></audio>
+        <audio data-key="70" id="F" src="./sounds/kick.wav"></audio>
+        <audio data-key="71" id="G" src="./sounds/openhat.wav"></audio>
+    </body>
+    <script src="./js/app.js"></script>
+</html>
