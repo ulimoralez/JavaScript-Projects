@@ -18,4 +18,6 @@ function setDate(){
     hourHand.style.transform = `rotate(${hourDegrees}deg)`;
     console.log(seconds);
 }
+
+
 setInterval(setDate, 1000);
